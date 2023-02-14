@@ -23,7 +23,7 @@ Construir un simulador computacional que reproduzca el comportamiento parcial de
 <!-- CONTACT -->
 ## Contacto
 
-Sebastian Moncada - A01027028 - a01027028@tec.mx - @sebas21mg
+Sebastian Moncada - A01027028 - a01027028@tec.mx - [@sebas21mg](https://github.com/sebas21mg)
 
 Link del proyecto: [sebas21mg/A01027028_TC2008B](https://github.com/sebas21mg/A01027028_TC2008B)
 
