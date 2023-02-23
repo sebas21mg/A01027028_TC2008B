@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Cheat Sheet</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap"
+    rel="stylesheet" />
+
+  <!-- Estilo -->
+  <link rel="stylesheet" href="../CSS/HtmlCheatSheet.css">
+</head>
+
+<body>
+
+  <header>
+
+    <h1>HTML Cheat Sheet</h1>
+
+  </header>
+
+  <article>
+
+    <h2>a - Hyperlinks </h2>
+    <p>
+      Sirven para hacer un link de una p&aacute;gina a otro recurso en la web, sea otro archivo en el servidor web, u
+      otra
+      p&aacute;gina web.
+    </p>
+    <p>
+      Por ejemplo:
+      <a href="https://tinyurl.com/4wnrkkzx">El siguiente link muestra un video de c&oacute;mo funcionan los
+        hyperlinks!</a>
+    </p>
+
+
+    <h2>p - Frases o párrafos</h2>
+    <p>
+      El elemento p (párrafo) es el apropiado para distribuir el texto en párrafos. Este es un elemento en bloque.
+    </p>
+    <p>
+      Por ejemplo:
+    </p>
+    <p>
+      Este es otro párrafo, por eso hay una separación adicional con "Por ejemplo:"
+    </p>
+
+
+    <h2>h1, h2, h3, ..., h6 - Títulos o encabezados</h2>
+    <p>
+      Un elemento de encabezado describe brevemente el tema de la sección que presenta.
+    </p>
+    <p>
+      Los elementos de encabezado implementan seis niveles de encabezado del documento, h1 es el más importante y h6 el
+      menos importante.
+    </p>
+    <p>
+      Por ejemplo:
+    </p>
+    <h4>Este es un h4</h4>
+    <h5>Este es un h5</h5>
+    <h6>Este es un h6</h6>
+
+
+    <h2>div - División</h2>
+    <p>
+      Sirve para crear secciones o agrupar contenidos. Es un elemento en bloque.
+    </p>
+    <p>
+      Por ejemplo:
+    </p>
+    <div style="background-color: khaki;">Esta es una división</div>
+    <div style="background-color:lightsalmon;">Esta es otra</div>
+
+
+    <h2>span - Abarcar</h2>
+    <p>
+      Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea.
+    </p>
+    <p>
+      Por ejemplo: Si quiero darle un estilo particular a
+      <span style="background-color: darkslategrey; color: white;">ESTA</span>
+      parte del texto, puedo usar un span y agregarle
+      estilo.
+    </p>
+
+
+    <h2>strong - Énfasis</h2>
+    <p>
+      El elemento strong es el apropiado para marcar con especial énfasis las partes más importantes de un texto.
+    </p>
+    <p>
+      Por ejemplo: Quiero darle énfasis a
+      <strong>ESTA</strong>
+      parte del texto.
+    </p>
+
+
+    <h2>i - Cursiva</h2>
+    <p>
+      Muestra el texto marcado con un estilo en cursiva o italica.
+    </p>
+    <p>
+      Por ejemplo: Quiero que
+      <i>ESTA</i>
+      parte del texto esté en cursiva.
+    </p>
+
+
+    <h2>u - Subrayado</h2>
+    <p>
+      Muestra el texto subrayado.
+    </p>
+    <p>
+      Por ejemplo: Quiero que
+      <u>ESTA</u>
+      parte del texto esté subrayada.
+    </p>
+
+
+    <h2>b - Negrita</h2>
+    <p>
+      Indica que el texto debe ser representado con una variable bold, o negrita, de la tipografía que se esté usando.
+    </p>
+    <p>
+      Por ejemplo: Quiero que
+      <b>ESTA</b>
+      parte del texto esté en negrita.
+    </p>
+
+
+    <h2>strike - Tachar</h2>
+    <p>
+      Muestra el texto tachado con una linea horizontal.
+    </p>
+    <p>
+      Por ejemplo: Quiero que
+      <strike>ESTA</strike>
+      parte del texto esté tachada.
+    </p>
+
+
+    <h2>small - Pequeño</h2>
+    <p>
+      El elemento HTML strong hace el tamaño del texto una talla más pequeña (por ejemplo, de largo a mediano, o de
+      pequeño a extra pequeño) que el tamaño mínimo de fuente del navegador. En HTML5, este elemento es reutilizado para
+      representar comentarios laterales y letra pequeña, incluyendo derechos de autor y texto legal, independientemente
+      de su estilo de presentación.
+    </p>
+    <p>
+      Por ejemplo: Quiero que
+      <small>esta</small>
+      parte del texto sea más pequeña.
+    </p>
+
+
+    <h2>em - Énfasis</h2>
+    <p>
+      El elemento HTML em es el apropiado para marcar con énfasis las partes importantes de un texto. El elemento em
+      puede
+      ser anidado, con cada nivel de anidamiento indicando un mayor grado de énfasis.
+    </p>
+    <p>
+      Por ejemplo: Quiero que
+      <em>ESTA</em>
+      parte del texto tenga énfasis.
+    </p>
+
+
+    <h2>header - Encabezado</h2>
+    <p>
+      Representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, así
+      como también un logo, un formulario de búsqueda, un nombre de autor y otros componentes.
+    </p>
+    <p>
+      Por ejemplo: La página
+      <a href="https://www.htmlquick.com/es/reference/tags/section.html">
+        https://www.htmlquick.com/es/reference/tags/section.html
+      </a>
+      tiene un header:
+    </p>
+    <div class="center"><img class="altura-20" src="../Images/EjemploHeader.png" alt="Ejemplo header">
+    </div>
+
+
+    <h2>section - Sección</h2>
+    <p>
+      El elemento de HTML section representa una sección genérica de un documento. Sirve para determinar qué
+      contenido corresponde a qué parte de un esquema. Piensa en el esquema como en el índice de contenido de un libro;
+      un
+      tema común y subsecciones relacionadas. Es, por lo tanto, una etiqueta semántica. Su funcionalidad principal es
+      estructurar semánticamente un documento a la hora de ser representado por parte de un agente usuario. Por ejemplo,
+      un agente de usuario que represente el documento en voz, podría exponer al usuario el índice de contenido por
+      niveles para navegar rápidamente por las distintas partes.
+
+    </p>
+    <p>
+      Por ejemplo: La página
+      <a href="https://www.htmlquick.com/es/reference/tags/section.html">
+        https://www.htmlquick.com/es/reference/tags/section.html
+      </a>
+      tiene un artículo que está dividido en varias secciones como la siguiente:
+    </p>
+    <div class="center"><img class="altura-20" src="../Images/EjemploSection.png" alt="Ejemplo section">
+    </div>
+
+
+    <h2>article - Artículo</h2>
+    <p>
+      El Elemento de HTML article representa una composición auto-contenida en un documento, una página, una aplicación
+      o
+      en un sitio, que se quiere que sea distribuíble y/o reutilizable de manera independiente, por ejemplo, en la
+      redifusión. Algunos ejemplos podrían ser un mensaje en un foro, un artículo de una revista o un periódico, una
+      entrada de blog,
+      el comentario de un usuario, un widget o gadget interactivo, o cualquier otro elemento de contenido independiente.
+    </p>
+    <p>
+      Por ejemplo: La página
+      <a href="https://www.htmlquick.com/es/reference/tags/section.html">
+        https://www.htmlquick.com/es/reference/tags/section.html
+      </a>
+      tiene un artículo:
+    </p>
+    <div class="center"><img class="altura-15" src="../Images/EjemploArticle.png" alt="Ejemplo article">
+    </div>
+
+
+    <h2>aside - Lateral</h2>
+    <p>
+      El elemento HTML
+      aside representa una sección de una página que consiste en contenido que está indirectamente
+      relacionado con el contenido principal del documento. Estas secciones son a menudo representadas como barras
+      laterales
+      o como inserciones y contienen una explicación al margen como una definición de glosario, elementos relacionados
+      indirectamente, como publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o enlaces
+      a
+      blogs relacionados.
+    </p>
+
+
+    <h2>footer - Lateral</h2>
+    <p>
+      El Elemento HTML Footer representa un pie de página para el contenido de sección más cercano o el elemento
+      raíz de sección. Un pie de página típicamente contiene información acerca de
+      el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.
+    </p>
+    <p>
+      Por ejemplo: La página
+      <a href="https://www.htmlquick.com/es/reference/tags/section.html">
+        https://www.htmlquick.com/es/reference/tags/section.html
+      </a>
+      tiene un footer:
+    </p>
+    <div class="center"><img class="altura-20" src="../Images/EjemploFooter.png" alt="Ejemplo footer">
+    </div>
+
+
+    <h2>nav - Barra de navegación</h2>
+    <p>
+      El elemento HTML nav representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya
+      sea
+      dentro del documento actual o a otros documentos. Ejemplos comunes de secciones de navegación son menús, tablas de
+      contenido e índices.
+    </p>
+    <p>
+      Por ejemplo:
+    </p>
+    <img class="gordo" src="../Images/EjemploNav.png" alt="Ejemplo nav">
+    <p><small>Referencia:
+        <a href="https://oregoom.com/">
+          https://oregoom.com/
+        </a>
+      </small></p>
+
+
+    <h2>img - Imagen</h2>
+    <p>
+      Representa una imagen en el documento.
+    </p>
+    <p>
+      Por ejemplo: todas las imágenes que se han visto hasta ahora en la página
+    </p>
+
+
+    <h2>br - Salto de línea</h2>
+    <p>
+      El elemento HTML line break br produce un salto de línea en el texto (retorno de carro). Es útil para escribir un
+      poema o una dirección, donde la división de las líneas es significante.
+    </p>
+    <p>
+      Por ejemplo: puedo <br> hacer <br> estos <br> saltos <br> de <br> línea <br> aunque <br> sea <br> el <br> mismo
+      <br>
+      párrafo.
+    </p>
+
+
+    <h2>hr - Cambio de tema (línea horizontal)</h2>
+    <p>
+      Representa un cambio de tema entre párrafos (por ejemplo, un cambio de escena en una historia, un cambio de tema
+      en
+      una sección). En versiones previas de HTML representaba una línea horizontal. Aún puede ser representada como una
+      línea horizontal en los navegadores visuales, pero ahora es definida en términos semánticos y no tanto en términos
+      representativos, por tanto para dibujar una línea horizontal se debería usar el CSS apropiado.
+    </p>
+    <p>
+      Por ejemplo:
+    </p>
+    <hr>
+
+
+    <h2>form - Formulario</h2>
+    <p>
+      El elemento HTML form representa una sección de un documento que contiene controles interactivos que permiten a un
+      usuario enviar información a un servidor web.
+    </p>
+    <p>
+      Por ejemplo:
+    </p>
+    <form action="">
+      <label for="GET-name">Nombre:</label>
+      <input id="GET-name" type="text" name="name">
+      <input type="submit" value="Save">
+    </form>
+
+
+    <h2>table - Tabla</h2>
+    <p>
+      Los objetos table revelan la interfaz del HTMLTableElement la cual posee métodos y propiedades especiales (más
+      allá
+      del interfaz regular del objeto del elemento que también tienen disponibles mediante herencia) para manipular la
+      vista y presentación de tablas en HTML.
+    </p>
+    <p>
+      Por ejemplo:
+    </p>
+    <table>
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+    </table>
+    <p><small>Referencia:
+        <a href="https://www.w3schools.com/html/html_tables.asp">
+          https://www.w3schools.com/html/html_tables.asp
+        </a>
+      </small></p>
+
+
+    <h2>ul - Lista no ordenada</h2>
+    <p>
+      ul de "unordered list" -lista no ordenada . crea una lista no ordenada.
+    </p>
+    <p>
+      Por ejemplo:
+    </p>
+    <ul>
+      <li>Esto</li>
+      <li>Lo otro</li>
+      <li>Lo de más allá</li>
+    </ul>
+
+
+    <h2>ol - Lista ordenada</h2>
+    <p>
+      El elemento ol permite definir listas o viñetas ordenadas ("Ordered List"), bien con numeración o alfabéticamente.
+    </p>
+    <p>
+      Por ejemplo:
+    </p>
+    <ol>
+      <li>punto uno</li>
+      <li>punto dos</li>
+      <li>punto tres</li>
+    </ol>
+
+  </article>
+
+  <footer>
+
+    Referencia de la mayoría de definiciones:
+    <a href="https://developer.mozilla.org/es/docs/Web/HTML">MDN HTML References</a>
+
+  </footer>
+
+</body>
+
+</html>
