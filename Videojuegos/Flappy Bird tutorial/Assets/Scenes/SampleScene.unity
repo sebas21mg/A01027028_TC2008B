@@ -565,7 +565,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerScore: 0
   scoreText: {fileID: 1986800319}
-  gameOverScreen: {fileID: 0}
+  gameOverScreen: {fileID: 157170380}
+  bird: {fileID: 937083468}
+  pipeSpawner: {fileID: 1099629215}
+  pipeMove: {fileID: 4255203702634128710, guid: b1fcaa942bcf6804caceba2ad49970be, type: 3}
 --- !u!4 &577086821
 Transform:
   m_ObjectHideFlags: 0
@@ -703,8 +706,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRigidBody: {fileID: 937083465}
   flapStrenght: 8
-  logic: {fileID: 0}
-  birdIsAlive: 0
+  logic: {fileID: 577086820}
+  birdIsAlive: 1
 --- !u!58 &937083469
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -751,7 +754,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipe: {fileID: 4255203702634128709, guid: b1fcaa942bcf6804caceba2ad49970be, type: 3}
-  spawnRate: 2
+  spawnRate: 3
+  enable: 0
 --- !u!4 &1099629216
 Transform:
   m_ObjectHideFlags: 0
