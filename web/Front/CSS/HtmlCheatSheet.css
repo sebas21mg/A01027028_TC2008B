@@ -36,6 +36,18 @@ footer a {
   color: white;
 }
 
-.align-center {
+.center {
   text-align: center;
+}
+
+.altura-20 {
+  height: 20rem;
+}
+
+.altura-15 {
+  height: 15rem;
+}
+
+.gordo {
+  width: 100%;
 }
