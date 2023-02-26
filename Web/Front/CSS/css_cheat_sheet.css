@@ -1,5 +1,4 @@
 body {
-  background-color: #eaeaea;
   background-color: #e8eaf6;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -23,7 +22,7 @@ h3 {
 header {
   position: static;
   background-image: url(../Images/PortadaCssCheatSheet.jpg);
-  height: 30rem;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,4 +89,32 @@ header {
 #radius {
   border-radius: 90%;
   border-style: dotted;
+}
+
+#bg-img {
+  background-image: url(../Images/PortadaCssCheatSheet.jpg);
+  font-weight: bolder;
+}
+
+#color {
+  color: #1a237e;
+  border-color: #1a237e;
+  border-style: dashed;
+  font-weight: bold;
+}
+
+#caption {
+  font: caption;
+}
+
+#family {
+  font-family: Times, serif;
+}
+
+#font-style {
+  font-style: italic;
+}
+
+#font-weight {
+  font-weight: bolder;
 }
