@@ -1,5 +1,11 @@
+:root {
+  --bg-color: #e8eaf6;
+  --primary-color: #1a237e;
+  --secundary-color: #3f51b5;
+}
+
 body {
-  background-color: #e8eaf6;
+  background-color: var(--bg-color);
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
@@ -8,7 +14,7 @@ h1 {
   font-family: 'Rubik', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #1a237e;
+  color: var(--primary-color);
 }
 
 h2 {
@@ -20,12 +26,12 @@ h3 {
 }
 
 header {
-  position: static;
   background-image: url(../Images/PortadaCssCheatSheet.jpg);
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-repeat: no-repeat;
 }
 
 .container-header {
@@ -33,6 +39,7 @@ header {
   position: absolute;
   width: 50%;
   margin: 5% auto;
+  padding: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
   border-radius: 1rem;
@@ -55,11 +62,10 @@ header {
 
 .article-title {
   text-align: center;
-  color: #1a237e;
+  color: var(--primary-color);
 }
 
 .ejemplo {
-  width: 90%;
   margin: 0.5rem auto;
   padding: 0.5rem 2rem;
   border-radius: 1rem;
@@ -91,14 +97,14 @@ header {
   border-style: dotted;
 }
 
-#bg-img {
+.bg-img {
   background-image: url(../Images/PortadaCssCheatSheet.jpg);
   font-weight: bolder;
 }
 
 #color {
-  color: #1a237e;
-  border-color: #1a237e;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
   border-style: dashed;
   font-weight: bold;
 }
@@ -117,4 +123,69 @@ header {
 
 #font-weight {
   font-weight: bolder;
+}
+
+#width {
+  width: 25%;
+  border-style: dashed;
+}
+
+#height {
+  height: 25vh;
+  border-style: dashed;
+}
+
+#list-style {
+  list-style: georgian;
+}
+
+#margin {
+  margin: 2rem 4rem 6rem 8rem;
+  border-style: dotted;
+  background-color: white;
+}
+
+#o-margin {
+  border-radius: 1rem;
+  background-color: var(--secundary-color);
+  border: solid var(--secundary-color);
+}
+
+#padding {
+  background-color: white;
+}
+
+#o-padding {
+  padding: 2rem 4rem 6rem 8rem;
+  border: dotted;
+  background-color: var(--secundary-color);
+  border-radius: 1rem;
+}
+
+#overflow {
+  overflow: scroll;
+  height: 5rem;
+}
+
+.block {
+  background-color: var(--secundary-color);
+  color: white;
+}
+
+.inblock {
+  display: inline-block;
+  background-color: var(--secundary-color);
+  color: white;
+}
+
+#position {
+  position: relative;
+  background-color: var(--secundary-color);
+  color: white;
+  left: 80px;
+  top: 80px;
+}
+
+#filter {
+  filter: grayscale(80%);
 }

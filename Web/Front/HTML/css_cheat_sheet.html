@@ -10,12 +10,11 @@
   <!-- Style -->
   <link rel="stylesheet" href="../CSS/css_cheat_sheet.css">
 
-  <!-- Fonts -->
+  <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@500;700&display=swap"
     rel="stylesheet">
-
 
   <title>CSS Cheat Sheet</title>
 </head>
@@ -24,7 +23,7 @@
 
   <header>
     <div class="container-header">
-      <h1>CSS Cheat Sheet <i class="fa-brands fa-css3-alt"></i></h1>
+      <h1>CSS Cheat Sheet </h1>
       <h2 class="container-h2">Sebastian Moncada - A01027028</h2>
     </div>
   </header>
@@ -153,7 +152,7 @@
       <h3>
         Por ejemplo:
       </h3>
-      <div class="ejemplo" id="bg-img">
+      <div class="ejemplo bg-img">
         <p>
           Poner una imagen de fondo
         </p>
@@ -252,24 +251,203 @@
       </div>
     </div>
 
+    <div class="article-container">
+      <span class="article-title">
+        <h2>width</h2>
+      </span>
+      <p>
+        La propiedad CSS width especifica la anchura del area de contenido de un elemento. De forma predeterminada,
+        establece el ancho del área de contenido, pero si el box-sizing se establece en border-box, establece el ancho
+        del área del borde.
+      </p>
+      <h3>
+        Por ejemplo:
+      </h3>
+      <div class="ejemplo" id="width">
+        <p>
+          Cambiar el tamaño de este div al 25% del div más grande
+        </p>
+      </div>
+    </div>
+
+    <div class="article-container">
+      <span class="article-title">
+        <h2>height</h2>
+      </span>
+      <p>
+        La propiedad CSS height especifica la altura de un elemento. Por defecto, la propiedad define la altura del área
+        de contenido. Sin embargo, si box-sizing está configurado como border-box, determina la altura del área de
+        borde.
+      </p>
+      <h3>
+        Por ejemplo:
+      </h3>
+      <div class="ejemplo" id="height">
+        <p>
+          Cambiar la altura de este div al 25 viewport height
+        </p>
+      </div>
+    </div>
+
+    <div class="article-container">
+      <span class="article-title">
+        <h2>list-style</h2>
+      </span>
+      <p>
+        La propiedad de estilo de lista (list-style) permite definir de golpe todos los parámetros: list-style-type,
+        list-style-image, y list-style-position.
+      </p>
+      <h3>
+        Por ejemplo:
+      </h3>
+      <div class="ejemplo">
+        <ul id="list-style">
+          <li>Cambiar</li>
+          <li>estilo</li>
+          <li>a</li>
+          <li>georgian</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="article-container">
+      <span class="article-title">
+        <h2>margin</h2>
+      </span>
+      <p>
+        La propiedad CSS margin establece el margen para los cuatro lados. Es una abreviación para evitar tener que
+        establecer cada lado por separado con las otras propiedades de margen: margin-top (en-US), margin-right,
+        margin-bottom y margin-left (en-US).
+      </p>
+      <h3>
+        Por ejemplo:
+      </h3>
+      <div id="o-margin">
+        <div class="ejemplo" id="margin">
+          <p>
+            Cambiar márgenes del div con borde punteado a 2rem, 4rem, 6rem y 8rem
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-container">
+      <span class="article-title">
+        <h2>padding</h2>
+      </span>
+      <p>
+        La propiedad abreviada de CSS padding establece el área de relleno en los cuatro lados de un elemento a la vez.
+      </p>
+      <h3>
+        Por ejemplo:
+      </h3>
+      <div id="o-padding">
+        <div class="ejemplo" id="padding">
+          <p>
+            Cambiar paddings del div con borde punteado a 2rem, 4rem, 6rem y 8rem
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-container">
+      <span class="article-title">
+        <h2>overflow</h2>
+      </span>
+      <p>
+        La propiedad CSS overflow especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el
+        contenido excedente en un elemento a nivel de bloque.
+      </p>
+      <h3>
+        Por ejemplo:
+      </h3>
+      <div class="ejemplo" id="overflow">
+        <p>
+          <b>Cambiar el overflow a que se tenga que hacer scroll</b>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eum soluta deserunt cupiditate, consequuntur
+          quam corrupti distinctio in reiciendis nemo numquam, nam quod dolorum saepe perspiciatis officia quasi
+          explicabo eveniet?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptas deleniti, laboriosam exercitationem sed
+          optio! Nobis labore ea molestias consectetur deleniti fugiat blanditiis, voluptas animi. Sapiente voluptas
+          porro optio commodi?
+        </p>
+      </div>
+    </div>
+
+    <div class="article-container">
+      <span class="article-title">
+        <h2>display</h2>
+      </span>
+      <p>
+        La propiedad CSS display especifica si un elemento es tratado como block or inline element y el diseño usado por
+        sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible).
+      </p>
+      <h3>
+        Por ejemplo:
+      </h3>
+      Mostrar como bloque: (por defecto de los divs)
+      <div class="ejemplo block">
+        div 1
+      </div>
+      <div class="ejemplo block">
+        div 2
+      </div>
+      <div class="ejemplo block">
+        div 3
+      </div>
+      Mostrar como bloque en línea:
+      <div class="ejemplo inblock">
+        div 1
+      </div>
+      <div class="ejemplo inblock">
+        div 2
+      </div>
+      <div class="ejemplo inblock">
+        div 3
+      </div>
+    </div>
+    </div>
+
+    <div class="article-container">
+      <span class="article-title">
+        <h2>position</h2>
+      </span>
+      <p>
+        La propiedad position de CSS especifica cómo un elemento es posicionado en el documento. Las propiedades top,
+        right, bottom, y left determinan la ubicación final de los elementos posicionados.
+      </p>
+      <h3>
+        Por ejemplo:
+      </h3>
+      <div class="ejemplo" id="position">
+        <p>
+          Cambiar la posición a relativa
+        </p>
+      </div>
+    </div>
+
+    <div class="article-container">
+      <span class="article-title">
+        <h2>filter</h2>
+      </span>
+      <p>
+        La propiedad CSS filter dota de efectos gráficos como el desenfoque o cambio de color en la representación antes
+        de que se muestre el elemento. Los filtros se utilizan comúnmente para ajustar la representación de imágenes,
+        fondos o bordes.
+      </p>
+      <h3>
+        Por ejemplo:
+      </h3>
+      <div class="ejemplo bg-img" id="filter">
+        <p>
+          Hacer que la imagen tenga un filtro blanco y negro
+        </p>
+      </div>
+    </div>
+
   </article>
-  <!-- 
-border-radius
-background-image
-color
-font
-font-family
-font-style, font-weight
-width, height
-list-style
-margin
-padding
-overflow
-display
-position
-filter
-Por cada propiedad, agrega un título, explicación, y ejemplo de funcionamiento.
- -->
 
 </body>
 
