@@ -1,0 +1,212 @@
+:root {
+  --color-1: #FC6057;
+  --color-2: #fd825c;
+  --color-3: #fda061;
+  --color-4: #01a787;
+  --color-5: #1bc1a1;
+  --color-6: #34daba;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2c3043;
+}
+
+.barra {
+  height: 10vh;
+  margin: 0;
+  padding: 0 10px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 100px auto;
+  gap: 20px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.button {
+  height: 1.4rem;
+  width: 1.4rem;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.rojo {
+  background-color: var(--color-1);
+}
+
+.amarillo {
+  background-color: var(--color-3);
+}
+
+.verde {
+  background-color: var(--color-4);
+}
+
+.busqueda {
+  background-color: white;
+  height: 1.8rem;
+  border-radius: 5px;
+}
+
+.grid-container {
+  margin: 0;
+  padding: 0 10px 10px 10px;
+  display: grid;
+  height: 90vh;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  border-radius: 10px;
+}
+
+.card-style {
+  background-color: var(--color-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 1px 1px 10px gray; */
+  border-radius: 10px;
+}
+
+.card-1:nth-child(1) {
+  background-color: var(--color-1);
+}
+
+.card-1:nth-child(2) {
+  background-color: var(--color-2);
+}
+
+.card-1:nth-child(3) {
+  background-color: var(--color-3);
+}
+
+.card-1:nth-child(4) {
+  background-color: var(--color-4);
+}
+
+.card-1:nth-child(5) {
+  background-color: var(--color-5);
+}
+
+.card-1:nth-child(6) {
+  background-color: var(--color-6);
+}
+
+#container-2 {
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.card-2:nth-child(1) {
+  background-color: var(--color-3);
+  grid-column: 1 / span 3;
+}
+
+.card-2:nth-child(2) {
+  background-color: var(--color-4);
+  grid-row: 2 / span 4;
+}
+
+.card-2:nth-child(3) {
+  background-color: var(--color-5);
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+}
+
+.card-2:nth-child(4) {
+  background-color: var(--color-1);
+  grid-row: 4 / span 2;
+}
+
+.card-2:nth-child(5) {
+  background-color: var(--color-2);
+  grid-row: 4 / span 2;
+}
+
+#container-3 {
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.card-3:nth-child(1) {
+  background-color: var(--color-2);
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
+}
+
+.card-3:nth-child(2) {
+  background-color: var(--color-1);
+  grid-column: 4 / span 3;
+  grid-row: 1 / span 2;
+}
+
+.card-3:nth-child(3) {
+  background-color: var(--color-4);
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 3;
+}
+
+.card-3:nth-child(4) {
+  background-color: var(--color-6);
+  grid-column: 3 / span 4;
+  grid-row: 3 / span 3;
+}
+
+.card-3:nth-child(5) {
+  background-color: var(--color-3);
+  grid-column: 1 / span 6;
+  grid-row: 6;
+}
+
+#container-4 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.card-4:nth-child(1) {
+  background-color: var(--color-3);
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.card-4:nth-child(2) {
+  background-color: var(--color-6);
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.card-4:nth-child(3) {
+  background-color: var(--color-1);
+  grid-row: 2 / span 3;
+}
+
+.card-4:nth-child(4) {
+  background-color: var(--color-4);
+  grid-row: 2 / span 3;
+  height: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding-top: 10px;
+}
+
+.card-5:nth-child(1) {
+  background-color: var(--color-6);
+  grid-column: 1 / span 2;
+}
+
+.card-5:nth-child(2) {
+  background-color: var(--color-5);
+}
+
+.card-5:nth-child(3) {
+  background-color: var(--color-3);
+}
