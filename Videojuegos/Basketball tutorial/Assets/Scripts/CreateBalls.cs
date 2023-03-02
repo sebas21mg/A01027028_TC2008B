@@ -6,6 +6,7 @@ public class CreateBalls : MonoBehaviour
 {
   [SerializeField] GameObject ball;
   [SerializeField] float delay;
+  [SerializeField] float velStrenght;
 
   // Start is called before the first frame update
   void Start()
@@ -22,7 +23,7 @@ public class CreateBalls : MonoBehaviour
   void DropBall()
   {
     Vector2 pos = new Vector2(Random.Range(-8.5f, 8.5f), transform.position.y);
-    GameObject obj = Instantiate(ball, pos, Quaternion.identity);
+    GameObject obj = Instantiate(ball, pos, transform.rotation);
     Destroy(obj, 5);
   }
 }

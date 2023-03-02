@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoardTrigger : MonoBehaviour
+public class BallIn : MonoBehaviour
 {
+  [SerializeField] Score score;
+
   // Start is called before the first frame update
   void Start()
   {
@@ -11,12 +13,9 @@ public class BoardTrigger : MonoBehaviour
   }
 
   // Update is called once per frame
-  void Update()
+  void OnTriggerEnter2D(Collider2D other)
   {
-  }
-
-  private void OnTriggerEnter2D(Collider2D collision)
-  {
-
+    score.AddPoints(1);
+    Debug.Log(score.score);
   }
 }
