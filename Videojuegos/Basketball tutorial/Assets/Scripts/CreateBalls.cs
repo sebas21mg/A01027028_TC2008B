@@ -24,6 +24,6 @@ public class CreateBalls : MonoBehaviour
   {
     Vector2 pos = new Vector2(Random.Range(-8.5f, 8.5f), transform.position.y);
     GameObject obj = Instantiate(ball, pos, transform.rotation);
-    Destroy(obj, 5);
+    // Destroy(obj, 5);
   }
 }
