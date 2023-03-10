@@ -8,6 +8,9 @@ public class Pad : MonoBehaviour
   [SerializeField] float verticalSpeed;
   [SerializeField] float horizontalSpeed;
   [SerializeField] float bounciness;
+  [SerializeField] Ball ball;
+  [SerializeField] float verticalLimit;
+  [SerializeField] float horizontalLimit;
 
   void Start()
   {
@@ -16,10 +19,20 @@ public class Pad : MonoBehaviour
 
   void Update()
   {
-    float upMove = Input.GetAxis("Vertical") * verticalSpeed * Time.deltaTime;
-    float horizontalMove = Input.GetAxis("Horizontal") * horizontalSpeed * Time.deltaTime;
+    if (!ball.isGameOver)
+    {
 
-    transform.Translate(horizontalMove, upMove, 0);
+      float verticalMove = Input.GetAxis("Vertical") * verticalSpeed * Time.deltaTime;
+      float horizontalMove = Input.GetAxis("Horizontal") * horizontalSpeed * Time.deltaTime;
+
+      if ((transform.position.y <= -verticalLimit && verticalMove < 0) || (transform.position.y >= verticalLimit && verticalMove > 0))
+        verticalMove = 0;
+
+      if ((transform.position.x <= -horizontalLimit && horizontalMove < 0) || (transform.position.x >= horizontalLimit && horizontalMove > 0))
+        horizontalMove = 0;
+
+      transform.Translate(horizontalMove, verticalMove, 0);
+    }
   }
 
   void OnCollisionEnter2D(Collision2D collision)
