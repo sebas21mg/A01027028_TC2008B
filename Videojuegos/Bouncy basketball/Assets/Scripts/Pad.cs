@@ -8,7 +8,7 @@ public class Pad : MonoBehaviour
   [SerializeField] float verticalSpeed;
   [SerializeField] float horizontalSpeed;
   [SerializeField] float bounciness;
-  [SerializeField] Ball ball;
+  [SerializeField] Ball Ball;
   [SerializeField] float verticalLimit;
   [SerializeField] float horizontalLimit;
 
@@ -19,7 +19,7 @@ public class Pad : MonoBehaviour
 
   void Update()
   {
-    if (!ball.isGameOver)
+    if (!Ball.isGameOver)
     {
 
       float verticalMove = Input.GetAxis("Vertical") * verticalSpeed * Time.deltaTime;
@@ -40,7 +40,7 @@ public class Pad : MonoBehaviour
     if (collision.gameObject.tag == "Ball")
     {
       float ballOffset = transform.position.x - collision.rigidbody.position.x;
-      float xBounce = -ballOffset * (bounciness / 2);
+      float xBounce = -ballOffset * (bounciness / 3);
 
       if (transform.position.y < collision.rigidbody.position.y)
         collision.rigidbody.velocity = new Vector3(xBounce, bounciness);

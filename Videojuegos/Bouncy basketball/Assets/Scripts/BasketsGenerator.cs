@@ -5,42 +5,43 @@ using UnityEngine;
 public class BasketsGenerator : MonoBehaviour
 {
   [SerializeField] float spawnRate;
-  [SerializeField] GameObject basket;
+  [SerializeField] GameObject Basket;
   [SerializeField] float right;
   [SerializeField] float fallSpeed;
-  [SerializeField] Ball ball;
+  [SerializeField] Ball Ball;
 
-  GameObject[] basketInstances;
+  GameObject[] BasketInstances;
 
   void Start()
   {
-    if (!ball.isGameOver)
-      InvokeRepeating("GenerateBasket", 0f, spawnRate);
+    InvokeRepeating("GenerateBasket", 0f, spawnRate);
   }
 
   void Update()
   {
-    basketInstances = GameObject.FindGameObjectsWithTag("Basket");
+    BasketInstances = GameObject.FindGameObjectsWithTag("Basket");
 
-    foreach (GameObject basketInstance in basketInstances)
+    foreach (GameObject BasketInstance in BasketInstances)
     {
-      if (!ball.isGameOver)
-        basketInstance.transform.Translate(Vector2.down * fallSpeed * Time.deltaTime);
-      if (basketInstance.transform.position.y < -20)
-        Destroy(basketInstance);
+      if (!Ball.isGameOver)
+        BasketInstance.transform.Translate(Vector2.down * fallSpeed * Time.deltaTime);
+      if (BasketInstance.transform.position.y < -20)
+        Destroy(BasketInstance);
     }
 
   }
 
   void GenerateBasket()
   {
-    float xBasketPosition = Random.Range(-right, right);
+    if (!Ball.isGameOver)
+    {
+      float xBasketPosition = Random.Range(-right, right);
 
-    GameObject basketInstance = Instantiate(
-      basket,
-      new Vector3(xBasketPosition, transform.position.y),
-      transform.rotation
-    );
-
+      GameObject BasketInstance = Instantiate(
+        Basket,
+        new Vector3(xBasketPosition, transform.position.y),
+        transform.rotation
+      );
+    }
   }
 }

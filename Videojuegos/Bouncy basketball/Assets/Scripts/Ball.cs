@@ -5,7 +5,8 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
 
-  [SerializeField] ScoreManager score;
+  [SerializeField] ScoreManager ScoreManager;
+  [SerializeField] GameOverScreen GameOverScreen;
   public bool isGameOver = false;
 
   void Start()
@@ -30,7 +31,7 @@ public class Ball : MonoBehaviour
     {
       if (transform.position.y > collider.transform.position.y)
       {
-        score.AddPoint(1);
+        ScoreManager.AddPoint(1);
 
         Destroy(collider.gameObject);
       }
@@ -41,5 +42,6 @@ public class Ball : MonoBehaviour
   {
     Destroy(this);
     isGameOver = true;
+    GameOverScreen.Setup(ScoreManager.score);
   }
 }
