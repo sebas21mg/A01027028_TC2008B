@@ -7,10 +7,13 @@ using UnityEngine.SceneManagement;
 public class GameOverScreen : MonoBehaviour
 {
 
+  [SerializeField] private AudioSource gameOverSound;
   public TextMeshProUGUI ScoreText;
 
   public void Setup(int score)
   {
+    gameOverSound.Play();
+
     gameObject.SetActive(true);
 
     // Cambiar el texto del score para que esté en el centro

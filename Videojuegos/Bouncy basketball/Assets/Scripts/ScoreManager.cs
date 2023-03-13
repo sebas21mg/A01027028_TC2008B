@@ -5,6 +5,7 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
+  [SerializeField] private AudioSource scoreSoundEffect;
   [SerializeField] TextMeshProUGUI ScoreText;
 
   public int score = 0;
@@ -16,6 +17,7 @@ public class ScoreManager : MonoBehaviour
 
   public void AddPoint(int amount)
   {
+    scoreSoundEffect.Play();
     score += amount;
     ScoreText.text = score.ToString();
   }
