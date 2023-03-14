@@ -8,6 +8,6 @@ El juego es muy sencillo, es un capibara jugando a encestar y su objetivo es el 
 
 Solo usa las flechas de arriba, izquierda, derecha y abajo para mover a la capibara, e intenta que no se te caiga el "balon".
 
-Cómo se mencionó anteriormente el objetivo es hacer la mayor cantidad de puntos que se pueda, ¡Sin limtes!
+Cómo se mencionó anteriormente el objetivo es hacer la mayor cantidad de puntos que se pueda, ¡Sin límites!
 
 Esperamos les guste.
