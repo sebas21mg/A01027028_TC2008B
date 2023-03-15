@@ -1,23 +1,34 @@
-function newReversedArray(nums) {
+function newReversedArray(array) {
   let newNums = [];
-  nums.forEach(n => newNums.unshift(n));
+  array.forEach(n => newNums.unshift(n));
   return newNums;
 }
 
-function reverseArray(nums) {
+function reverseArray(array) {
 
-  for (let i = 0; i < nums.length; i++) {
-    nums.splice(nums.length - i, 0, nums[0]);
-    nums.shift();
+  for (let i = 0; i < array.length; i++) {
+    array.splice(array.length - i, 0, array[0]);
+    array.shift();
   }
 
 }
 
-let nums = [15, 34, 8, 24, 1];
-console.log("Array original: " + nums);
+document.querySelector("#ejercicio1").addEventListener("click", () => {
+  let nums = [15, 34, 8, 24, 1];
+  alert("Array original: " + nums);
 
-let newNums = newReversedArray(nums);
-console.log("Nuevo array: " + newNums);
+  let newNums = newReversedArray(nums);
+  alert("Nuevo array: " + newNums);
 
-reverseArray(nums);
-console.log("Mismo array invertido: " + nums);
+  reverseArray(nums);
+  alert("Mismo array invertido: " + nums);
+});
+
+function quitaDuplicados(array) {
+  return array.filter((item, i) => array.indexOf(item) === i);
+}
+
+let numsRepetidos = [9, 3, 3, 3, 9, 1, 3, 1, 0, 1, 1, 0, 0];
+let numsNoRepetidos = quitaDuplicados(numsRepetidos);
+console.log("Array con números repetidos: " + numsRepetidos);
+console.log("Arary con números sin repetir: " + numsNoRepetidos);
