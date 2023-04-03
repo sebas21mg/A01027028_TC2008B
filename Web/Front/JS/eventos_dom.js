@@ -4,6 +4,7 @@ const root = document.documentElement;
 const bgcolor1 = window.getComputedStyle(root).getPropertyValue('--bgcolor-1');
 const bgcolor2 = window.getComputedStyle(root).getPropertyValue('--bgcolor-2');
 const bgcolor3 = window.getComputedStyle(root).getPropertyValue('--bgcolor-3');
+const bgcolor4 = window.getComputedStyle(root).getPropertyValue('--bgcolor-4');
 
 // * Preguntas
 
