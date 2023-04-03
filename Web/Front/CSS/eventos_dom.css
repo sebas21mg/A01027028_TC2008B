@@ -1,0 +1,85 @@
+:root {
+    --bgcolor-1: #22577E;
+    --bgcolor-2: #5584AC;
+    --bgcolor-3: #6D6AA2;
+    --bgcolor-4: #00926F;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Rubik', sans-serif;
+}
+
+table,
+td {
+    border: 1px solid black;
+    padding: .5rem;
+}
+
+.container-fluid {
+    padding: 2rem 7%;
+}
+
+#header {
+    background-color: var(--bgcolor-1);
+    color: white;
+}
+
+#questionsCarousel {
+    background-color: var(--bgcolor-2);
+    color: white;
+}
+
+#ejercicios {
+    background-color: var(--bgcolor-3);
+    color: white;
+}
+
+#conclusiones {
+    background-color: var(--bgcolor-4);
+    color: white;
+}
+
+#main-title {
+    font-size: 4rem;
+    margin: 1.5rem 0;
+}
+
+.carousel {
+    padding: 4rem 15%;
+}
+
+.carousel-item {
+    text-align: justify;
+}
+
+.carousel-item h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.exercise {
+    background-color: white;
+    border-radius: 16px;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 1px 1px 3px gray;
+    color: black;
+}
+
+.exercise p {
+    margin: 0.5rem 0;
+}

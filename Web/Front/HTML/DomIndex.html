@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="../css/eventos_dom.css">
+
+    <!-- Scripts -->
+    <script type="module" src="../js/eventos_dom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <title>Eventos y Dom</title>
+</head>
+
+<body>
+    <div id="header" class="container-fluid">
+        <div class="row text-center">
+            <h1 id="main-title">Eventos y DOM y ChatGPT</h1>
+        </div>
+        <div class="row">
+            <h2>Instrucciones</h2>
+            <p>
+                Utiliza ChatGPT y github Copilot para resolver la siguiente actividad. Antes de hacer los
+                ejercicios,
+                contesta las siguientes preguntas. Pregúntale a ChatGPT las preguntas, y verifica que lo que haya
+                generado es correcto. Cuando sea necesario, agrega un ejemplo de código. Incluye una fuente que
+                valide o
+                invalide lo que generó. Agrega elementos de HTML con tus respuestas. (<b>Protip</b>: usa ChatGPT
+                para
+                que las respuestas las ponga directamente en elementos de html.)
+            </p>
+            <p>
+                Terminando las preguntas y los ejercicios, documenta tu experiencia con las herramientas en la
+                sección
+                de conclusiones.
+            </p>
+        </div>
+        <!-- <div class="row">
+            <div class="col d-flex justify-content-center align-self-center">
+            </div>
+
+            <div class="col-5 justify-content-center">
+            </div>
+        </div> -->
+    </div>
+
+    <div id="questionsCarousel" class="carousel slide">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#questionsCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#questionsCarousel" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#questionsCarousel" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#questionsCarousel" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#questionsCarousel" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#questionsCarousel" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#questionsCarousel" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#questionsCarousel" data-bs-slide-to="7"
+                aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#questionsCarousel" data-bs-slide-to="8"
+                aria-label="Slide 9"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <h1>¿Qué es el DOM?</h1>
+                <p>
+                    El DOM (Document Object Model) es una representación en memoria de un documento HTML/XML que se
+                    carga en un navegador web. En otras palabras, el DOM es una estructura de árbol que representa los
+                    elementos HTML de una página web, así como los atributos y contenido asociados a estos elementos.
+                    <br><br>
+                    JavaScript utiliza el DOM para acceder y manipular elementos de una página web de forma dinámica.
+                    Con el DOM, los programadores pueden escribir código JavaScript para modificar el contenido de una
+                    página web, cambiar los estilos CSS, agregar o eliminar elementos, y mucho más.
+                    <br><br>
+                    El DOM es una parte esencial de la programación web moderna, y es compatible con todos los
+                    navegadores web modernos. Con el DOM, los desarrolladores pueden crear páginas web interactivas y
+                    dinámicas que respondan a la interacción del usuario.
+                </p>
+            </div>
+            <div class="carousel-item">
+                <h1>¿Qué es un nodo?</h1>
+                <p>
+                    En JavaScript, un nodo es un elemento del DOM (Document Object Model) que representa un objeto
+                    dentro de un árbol de nodos. Cada elemento HTML, atributo y contenido de texto dentro de un
+                    documento HTML es un nodo en el árbol de nodos del DOM.
+                    <br><br>
+                    Hay varios tipos de nodos en el DOM, incluyendo:
+                </p>
+                <ul>
+                    <li><b>Elementos</b>: Representan las etiquetas HTML, como div, p, img, etc.</li>
+                    <li><b>Atributos</b>: Representan los atributos HTML, como "href" o "src".</li>
+                    <li><b>Texto</b>: Representa el contenido de texto de un elemento HTML.</li>
+                    <li><b>Comentarios</b>: Representa los comentarios en un documento HTML.</li>
+                    <li><b>Documento</b>: Representa el documento completo.</li>
+                </ul>
+                <p>
+                    Cada nodo en el árbol de nodos del DOM tiene un padre y puede tener uno o más hijos. El padre de
+                    un nodo es el nodo que lo contiene, y los hijos son los nodos que están contenidos dentro del
+                    nodo. Los nodos también tienen propiedades y métodos que permiten a los desarrolladores acceder
+                    y manipular su contenido y atributos.
+                </p>
+            </div>
+            <div class="carousel-item">
+                <h1>¿Cómo se accede a un elemento del DOM?</h1>
+                <p>
+                    Para acceder a un elemento del DOM en JavaScript, puede usar el método getElementById() si tiene un
+                    atributo de identificación único en el elemento, o puede usar otros métodos como
+                    getElementsByClassName(), getElementsByTagName(), querySelector() y querySelectorAll() para acceder
+                    a los elementos a través de su nombre de clase, etiqueta o selector CSS.
+                </p>
+            </div>
+            <div class="carousel-item" id="div-modificar-elemento">
+                <h1>¿Cómo se modifica un elemento del DOM?</h1>
+                <p>
+                    Para modificar un elemento del DOM en JavaScript, se puede seguir los siguientes pasos generales:
+                </p>
+                <ol>
+                    <li>
+                        Seleccionar el elemento que se desea modificar utilizando alguna de las funciones de selección
+                        de elementos, como getElementById, querySelector, querySelectorAll, entre otras.
+                    </li>
+                    <li>
+                        Utilizar alguna de las propiedades del elemento para modificar su contenido o atributos, como
+                        innerHTML, textContent, setAttribute, style, entre otras.
+                    </li>
+                    <li>
+                        Si es necesario, añadir o eliminar elementos utilizando las funciones de manipulación del DOM,
+                        como createElement, appendChild, removeChild, replaceChild, entre otras.
+                    </li>
+                    <li>
+                        Finalmente, actualizar la página para que los cambios se reflejen en la interfaz de usuario.
+                    </li>
+                </ol>
+                <div class="align-content-center text-center">
+                    <button type="button" class="btn btn-outline-light" id="btn-modificar-elemento">Ejemplo: Modificar
+                        el
+                        color del texto</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <h1>¿Cuál es la diferencia entre getElementby* y querySelector*?</h1>
+                <p>
+                    Ambas funciones, getElementby* y querySelector*, son funciones utilizadas para seleccionar elementos
+                    del DOM en JavaScript, sin embargo, existen algunas diferencias entre ellas.
+                    <br><br>
+                    La función getElementby* permite seleccionar elementos utilizando un identificador único (id) o una
+                    etiqueta (tagName) específica.
+                    <br><br>
+                    Por otro lado, la función querySelector* permite seleccionar elementos utilizando selectores CSS. Es
+                    decir, se pueden seleccionar elementos utilizando cualquier selector CSS válido, como
+                    identificadores (#mi-id), clases (.mi-clase), atributos ([name="mi-atributo"]), pseudoclases
+                    (:hover), combinadores (div > p) y cualquier otro selector CSS.
+                    <br><br>
+                    En resumen, la principal diferencia entre getElementby* y querySelector* es que la primera se
+                    utiliza para seleccionar elementos por id o etiqueta, mientras que la segunda se utiliza para
+                    seleccionar elementos utilizando selectores CSS. La elección entre una u otra dependerá de las
+                    necesidades específicas del proyecto o tarea a realizar.
+                </p>
+            </div>
+            <div class="carousel-item">
+                <h1>
+                    ¿Qué es un evento?
+                </h1>
+                <p>
+                    En JavaScript, un evento es cualquier acción que se produce en un elemento del DOM, como un clic del
+                    ratón, un cambio en el valor de un campo de entrada o una carga completa de la página.
+                    <br><br>
+                    Los eventos permiten que el código JavaScript responda a las acciones del usuario o del navegador, y
+                    se pueden utilizar para agregar interactividad a las páginas web.
+                    <br><br>
+                    Para capturar un evento en JavaScript, se puede utilizar el método addEventListener() en el elemento
+                    del DOM que se desea escuchar. Este método toma dos argumentos: el tipo de evento que se desea
+                    escuchar (por ejemplo, "click", "change", "load", etc.) y la función que se ejecutará cuando se
+                    produzca el evento.
+                    <br><br>
+                    Los eventos son una parte fundamental de la programación web y permiten agregar interactividad y
+                    dinamismo a las páginas web.
+                </p>
+                <div class="align-content-center text-center">
+                    <button type="button" class="btn btn-outline-light" id="btn-evento">Ejemplo</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <h1>
+                    ¿Qué es un listener?
+                </h1>
+                <p>
+                    En JavaScript, un listener o "escuchador" es una función que se ejecuta en respuesta a un evento que
+                    ocurre en un elemento del DOM.
+                    <br><br>
+                    Los listeners se utilizan para "escuchar" los eventos que ocurren en un elemento, como un clic de
+                    ratón, una pulsación de tecla o un cambio en el valor de un campo de entrada, y luego ejecutar una
+                    acción en respuesta a ese evento.
+                    <br><br>
+                    Para agregar un listener en JavaScript, se utiliza el método addEventListener() en el elemento del
+                    DOM que se desea escuchar. Este método toma dos argumentos: el tipo de evento que se desea escuchar
+                    (por ejemplo, "click", "change", "load", etc.) y la función que se ejecutará cuando se produzca el
+                    evento.
+                    <br><br>
+                    Los listeners son una parte fundamental de la programación web y se utilizan para agregar
+                    interactividad y dinamismo a las páginas web.
+                </p>
+            </div>
+            <div class="carousel-item">
+                <h1>
+                    ¿Qué es un callback?
+                </h1>
+                <p>
+                    En JavaScript, un callback es una función que se pasa como argumento a otra función y se ejecuta en
+                    algún momento después, cuando se cumple alguna condición o se completa alguna tarea.
+                    <br><br>
+                    Los callbacks son una forma común de implementar la programación asíncrona en JavaScript, ya que
+                    permiten que una función continúe ejecutándose mientras se espera que se complete alguna tarea en
+                    segundo plano. Una vez que la tarea se completa, se llama al callback para procesar los resultados.
+                    <br><br>
+                    Los callbacks son una herramienta importante para la programación asíncrona en JavaScript y se
+                    utilizan en muchos aspectos del lenguaje, incluyendo la manipulación de eventos, las llamadas a API
+                    y la manipulación de archivos.
+                </p>
+            </div>
+            <div class="carousel-item">
+                <h1>
+                    ¿Qué es un objeto de evento?
+                </h1>
+                <p>
+                    Un objeto de evento en JavaScript es un objeto que contiene información sobre un evento que ha
+                    ocurrido, como un clic del mouse, una pulsación de tecla o una carga de página. El objeto de evento
+                    se genera automáticamente cuando ocurre el evento y se pasa como argumento a cualquier función que
+                    se haya registrado como un manejador de eventos para ese evento.
+                    <br><br>
+                    El objeto de evento contiene información sobre el tipo de evento, el elemento del DOM en el que
+                    ocurrió el evento, la posición del cursor del mouse y otros detalles específicos del evento. La
+                    estructura y los detalles específicos del objeto de evento varían según el tipo de evento.
+                    <br><br>
+                    El objeto de evento es una herramienta importante en la manipulación de eventos en JavaScript y
+                    permite que los desarrolladores obtengan información detallada sobre los eventos que ocurren en una
+                    página web y reaccionen en consecuencia.
+                </p>
+                <div class="align-content-center text-center">
+                    <button type="button" class="btn btn-outline-light" id="btn-cambiar-fondo">Ejemplo: cambiar el color
+                        del fondo</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#questionsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#questionsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+
+    <div id="ejercicios" class="container-fluid">
+        <h1 class="text-center">Ejercicios de código</h1>
+        <p>
+            Usa ChatGPT y copilot para resolver los ejercicios. Por cada ejercicio, pídele a ChatGPT o a copilot que
+            te
+            genere los comentarios. Verifica los resultados antes de subirlos a tu repo.
+        </p>
+
+        <div class="exercise">
+            <p>1. Modifica el siguiente elemento para mostrar la posición del mouse en el documento:</p>
+            <p id="mousePosition">Posición del mouse: </p>
+        </div>
+
+        <div class="exercise">
+            <p>
+                2. Al dar click al siguiente botón, obtén el nombre y apellido de las siguientes cajas de texto, y
+                agrega, después del botón, un elemento que tenga el nombre completo.
+            </p>
+            <form id="form1">
+                First name: <input id="form-fname" type="text" name="fname"><br>
+                Last name: <input id="form-lname" type="text" name="lname"><br><br>
+                <input id="form1-submit" type="submit" value="Submit">
+            </form>
+            <p id="resultadoEjercicio2"></p>
+        </div>
+
+        <div class="exercise">
+            <p>
+                3. Agrega el código para agregar una fila, o una columna, a la siguiente tabla al dar click al botón
+                correspondiente.
+            </p>
+            <table id="sampleTable">
+                <tr>
+                    <td>Row 1 column 1</td>
+                    <td>Row 1 column 2</td>
+                </tr>
+                <tr>
+                    <td>Row 2 column 1</td>
+                    <td>Row 2 column 2</td>
+                </tr>
+            </table><br>
+            <input id="btn-insert-r" type="button" value="Insert row">
+            <input id="btn-insert-c" type="button" value="Insert column">
+        </div>
+
+        <div class="exercise">
+            <p>4. Incluye dos cajas de input, para solicitar al usuario la posición de la fila y columna de la siguiente
+                tabla, y otra para solicitar un texto. Al apretar el botón, actualiza el contenido de esa tabla en la
+                posición que solicitaste, con la cadena de texto que solicitaste.</p>
+            <table id="myTable">
+                <tr>
+                    <td>Row 1 Col 1</td>
+                    <td>Row 1 Col 2</td>
+                    <td>Row 1 Col 3</td>
+                </tr>
+                <tr>
+                    <td>Row 2 Col 1</td>
+                    <td>Row 2 Col 2</td>
+                    <td>Row 2 Col 3</td>
+                </tr>
+                <tr>
+                    <td>Row 3 Col 1</td>
+                    <td>Row 3 Col 2</td>
+                    <td>Row 3 Col 3</td>
+                </tr>
+            </table>
+            <br>
+            <form>
+                <input id="rowIndex" type="number" placeholder="Row Index">
+                <input id="colIndex" type="number" placeholder="Col Index">
+                <input id="newValue" type="text" placeholder="New Value">
+                <input id="btn-change" type="button" value="Change content">
+            </form>
+        </div>
+
+        <div class="exercise">
+            <p>
+                5. Agrega el código para quitar o agregar elementos a la lista de opciones. Los colores pueden ser
+                aleatorios.
+            </p>
+            <form>
+                <select id="colorSelect">
+                    <option>Red</option>
+                    <option>Green</option>
+                    <option>White</option>
+                    <option>Black</option>
+                </select>
+                <input id="btn-add-color" type="button" value="Add color">
+                <input id="btn-rmv-color" type="button" value="Remove color">
+            </form>
+        </div>
+
+        <div class="exercise">
+            <p>6. Al poner el mouse encima de la siguiente imagen, genera dos números aleatorios entre 300 y 600 para el
+                width y height de una imagen. Reemplaza la imagen de placeholder por otra similar con el tamaño random
+                que
+                generaste. El evento solo se dispara cuando el mouse entra en la imagen.</p>
+            <div class="text-center">
+                <img id="imagenGato" src="http://placekitten.com/200/300" style="border-radius: 16px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="conclusiones">
+        <h2 class="text-center">Conclusiones</h2>
+
+        <h4>Experiencia general</h4>
+        <p>
+            Me gustó mucho la actividad porque siento que pude aprenedr de manera más interactiva y práctica, lo
+            cual considero que es mucho mejor.
+        </p>
+        <h4>¿Cuándo y para qué usarías ChatGPT y cuándo Copilot?</h4>
+        <p>
+            No pude usar Copilot por la suscripción que pide así que sólo usé ChatGPT y definitivamente lo voy
+            a usar más seguido para buscar la respuesta a preguntas simples, ya que siento que de haberlas buscado
+            en otros lugares como Stack Overflow me hubiese tardado mucho más, y también lo voy a usar para generar
+            algoritmos simples o en forma de template para después personalizarlo a mis necesidades y/o gustos.
+        </p>
+        <h4>Ventajas de usar AI para programar</h4>
+        <p>
+            Reduce mucho el tiempo para hacer algoritmos o secciones de código ya que te puede dar un template
+            general que suele ser fácilmente entendible y ya sólo lo tienes que adaptar a tus necesidades, esto
+            también ayuda a aprender de manera más dinámica y sin dar muchas vueltas, ya que aprendes cómo funciona
+            la mayoría del código que vas a implementar y no cosas que, aunque son útiles, no lo vas a necesitar en el
+            momento. Además, puede responder de manera rápida preguntas simples.
+        </p>
+        <h4>Desventajas de usar AI para programar</h4>
+        <p>
+            Dependiendo de la complejidad del programa que se le pide, puede tener errores o hacer cosas
+            innecesarias, así que podría llegar a ser más tardado revisar lo que hizo la AI ante de hacerlo tú
+            mismo, aunque no haya sido mi caso para esta actividad. Además, y también dependiendo de la complejidad
+            del programa, puede quitarle un poco la oportunidad al programador de ser creativo e ingenioso, ya que
+            te pone en un camino específico para resolver el problema.
+        </p>
+    </div>
+
+</body>
+
+</html>
